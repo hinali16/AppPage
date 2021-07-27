@@ -1,0 +1,88 @@
+.caixa {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.destaques {
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc( 100vh - 50px);
+}
+.destaques__titulo {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fdfdfdfd;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+.destaques__titulo:hover {
+    box-shadow: inset 0 0 0 20px rgba(20, 20, 20, 0.192);
+}
+
+.destaques__principal {
+    background: url('../img/GrandChase.jpg') center / cover no-repeat;
+    grid-row: 1 /  3;
+}
+.destaques__principal:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.01);
+
+}
+/* :nth-child() comando para declarar filhos em css */
+.destaques__secundario:nth-child(2) {
+    background: url('../img/unknown.png') center / cover no-repeat;
+   
+}
+.destaques__secundario:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.01);
+
+}
+
+.destaques__secundario:nth-child(3) {
+    background: url('../img/netflix.jpg') center / cover no-repeat;
+  
+}
+.destaques__secundario:nth-child(4) {
+    background: url('../img/whatsapp.png') center / cover no-repeat;
+   
+}
+.destaques__secundario:nth-child(5) {
+    background: url('../img/cs-go.jpg') center / cover no-repeat;
+  
+}
+
+.destaques__categorias___lista {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+.destaques__categorias___item {
+    align-items: center;
+    background: #fdfdfd;
+    /* border-left: 5px solid transparent; */
+    color: #333333;
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+    box-shadow: inset 0px 0px 14px 0px #eeeeee;
+    
+
+}
+.destaques__categorias___link {
+    color: inherit;
+    border-bottom: 1.5px solid transparent;
+
+}
+.destaques__categorias___link:hover {
+    border-bottom: 1.5px solid #3333335e;
+
+}

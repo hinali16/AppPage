@@ -1,0 +1,48 @@
+.app {
+    background: #5e5e5e;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+
+}
+
+/* .material-icons.dimGrey { 
+    color: #535353;
+} */
+.material-icons.md-18 {
+     font-size: 18px; 
+    }
+.material-icons.md-dark {
+     color: rgba(0, 0, 0, 0.54); 
+}
+.material-icons.md-dark.md-inactive {
+     color: rgba(0, 0, 0, 0.26); 
+    }
+
+.cabecalho {
+    align-items: center;
+    display:flex;
+    grid-area: cabecalho;
+    padding: 0 2rem;
+    margin-bottom: 10px ;
+    box-shadow: 0px 0px 36px 4px rgb(59, 59, 59);
+}
+ 
+.conteudo {
+    padding: 0 2rem;
+}
+
+.rodape {
+    background: #747474fd;
+    color: rgb(230, 230, 230);
+    font-size: .8rem;
+    grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
+    
+}
