@@ -1,4 +1,10 @@
 @media screen and (min-width: 0) {
+    .app {
+        background: #242424;
+    }
+    .menu__link {
+        padding: 11px;
+    }
     .destaques__principal, .destaques__categorias {
         grid-column: 1 / 5;
     }
@@ -32,10 +38,12 @@
         width: 100% ;
     }
 
-
 }
 
 @media screen and (min-width: 768px) {
+    .destaques {
+        grid-gap: .2rem;
+    }
     .destaques__principal {
         grid-column: 1 / 4;
     }
@@ -72,10 +80,12 @@
          margin: 16px 8px 16px 8px;
          width: calc(50% - 1rem);
     }
-
 }
 
 @media screen and (min-width: 992px) {
+    .destaques {
+        grid-gap: .2rem;
+    }
     .populares__card {
         margin: 16px 8px 16px 8px;
         width: calc(25% - 1rem)
@@ -83,7 +93,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .destaques {
+        grid-gap: .2rem;
+    }
     .populares__card {
+        
         margin-bottom: 0;
         width: (20% - 1rem);
    }

@@ -24,6 +24,7 @@
 .populares__card___descricao {
     color: #333333;
     text-align: justify;
+    word-break: break-all;
     line-height: 1.5rem;
     margin: 1rem 0;
 }
@@ -36,7 +37,6 @@
         "card-corpo";
     grid-template-columns: 100%;
     border-radius: 5px ;
-    margin: 1rem;
     box-shadow: 8px 12px 25px 0px black;
     opacity: 0.9;
 }
